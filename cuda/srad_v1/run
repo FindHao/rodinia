@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -ue
 
-./srad 100 0.5 502 458
+./srad 1 0.5 502 458
 
+# hpcrun -e nvidia-cuda-memory ./srad 1 0.5 502 458 &> log

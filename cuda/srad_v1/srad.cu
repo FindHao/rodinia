@@ -158,13 +158,13 @@ int main(int argc, char *argv[]) {
     //================================================================================80
 
     // read image
-    image_ori_rows = 502;
-    image_ori_cols = 458;
-    image_ori_elem = image_ori_rows * image_ori_cols;
-
+    // image_ori_rows = 502;
+    // image_ori_cols = 458;
+    // image_ori_elem = image_ori_rows * image_ori_cols;
+    image_ori_elem = Nr * Nc;
     image_ori = (fp *)malloc(sizeof(fp) * image_ori_elem);
 
-    read_graphics("../../../data/srad/image.pgm", image_ori, image_ori_rows,
+    read_graphics("../../data/srad/image.pgm", image_ori, image_ori_rows,
                   image_ori_cols, 1);
 
     time3 = get_time();
